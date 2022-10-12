@@ -64,7 +64,7 @@ using namespace std;
 #define SRLIW 0b00000000000100011101000010011011 // 0000000 shamt rs1 101 rd 0011011
 #define SRAW 0b01000000000100011101001110111011 // 0100000 rs2 rs1 101 rd 0111011
 #define SRAIW 0b01000000000100011101000010011011 // 0100000 shamt rs1 101 rd 0011011
-#define SLT 00000000000100011010001110110011 // 0000000 rs2 rs1 010 rd 0110011 
+#define SLT 0b00000000000100011010001110110011 // 0000000 rs2 rs1 010 rd 0110011 
 #define SLTI 0b00000000111100001010000110010011 //imm[11:0] rs1 010 rd 0010011
 #define SLTU 0b00000000000100011011001110110011 // 0000000 rs2 rs1 011 rd 0110011 
 #define SLTIU 0b00000000111100001011000110010011 //imm[11:0] rs1 011 rd 0010011
@@ -159,37 +159,120 @@ int main(){
     cout << "Instruction: REMU" << endl;
     decode(REMU);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: DIVW" << endl;
     decode(DIVW);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: DIVUW" << endl;
     decode(DIVUW);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: REMW" << endl;
     decode(REMW);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: REMUW" << endl;
     decode(REMUW);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: AND" << endl;
     decode(AND);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: ANDI" << endl;
     decode(ANDI);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: OR" << endl;
     decode(OR);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: ORI" << endl;
     decode(ORI);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: XOR" << endl;
     decode(XOR);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
+    cout << "Instruction: XORI" << endl;
     decode(XORI);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMU" << endl;
-    //decode();
+    cout << "Instruction: LUI" << endl;
+    decode(LUI);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: AUIPC" << endl;
+    decode(AUIPC);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SLL" << endl;
+    decode(SLL);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SSLI" << endl;
+    decode(SLLI);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SRL" << endl;
+    decode(SRL);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SRLI" << endl;
+    decode(SRLI);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SRA" << endl;
+    decode(SRA);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SRAI" << endl;
+    decode(SRAI);
+    cout << "------------------------------------------" << endl;
+    // cout << "Instruction: SLLW" << endl;
+    // decode(SLLW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: SLLIW" << endl;
+    // decode(SLLIW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: SRLW" << endl;
+    decode(SRLW);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SRLIW" << endl;
+    // decode(SRLIW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: SRAW" << endl;
+    decode(SRAW);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SRAIW" << endl;
+    decode(SRAIW);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SLT" << endl;
+    decode(SLT);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SLTI" << endl;
+    decode(SLTI);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SLTU" << endl;
+    decode(SLTU);
+    cout << "------------------------------------------" << endl;
+    cout << "Instruction: SLTIU" << endl;
+    decode(SLTIU);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: BEQ" << endl;
+    decode(BEQ);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: BNE" << endl;
+    decode(BNE);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: BLT" << endl;
+    decode(BLT);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: BGE" << endl;
+    decode(BGE);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: BLTU" << endl;
+    decode(BLTU);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: BGEU" << endl;
+    decode(BGEU);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: JAL" << endl;
+    decode(JAL);
+    cout << "------------------------------------------" << endl;
+
+    cout << "Instruction: JALR" << endl;
+    decode(JALR);
     cout << "------------------------------------------" << endl;
 }
