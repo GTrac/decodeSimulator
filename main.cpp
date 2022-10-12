@@ -82,68 +82,84 @@ int main(){
     decode(LB);
     cout << "------------------------------------------" << endl;
 
-
     cout << "Instruction: LBU" << endl;
     decode(LBU);
     cout << "------------------------------------------" << endl;
 
-
     cout << "Instruction: SB" << endl;
     decode(SB);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: LH" << endl;
     decode(LH);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: LHU" << endl;
     decode(LHU);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: SH" << endl;
     decode(SH);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: LW" << endl;
     decode(LW);
     cout << "------------------------------------------" << endl;
+
     //decode(LWU);
     //cout << "\n------------------------------------------" << endl;
+
     cout << "Instruction: SW" << endl;
     decode(SW);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: LD" << endl;
-    decode(LD);
-    cout << "------------------------------------------" << endl;
-    cout << "Instruction: SD" << endl;
-    decode(SD);
-    cout << "------------------------------------------" << endl;
+
+    // cout << "Instruction: LD" << endl;
+    // decode(LD);
+    // cout << "------------------------------------------" << endl;
+
+    // cout << "Instruction: SD" << endl;
+    // decode(SD);
+    // cout << "------------------------------------------" << endl;
+
     cout << "Instruction: ADD" << endl;
     decode(ADD);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: ADDI" << endl;
     decode(ADDI);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: ADDW" << endl;
-    decode(ADDW);
-    cout << "------------------------------------------" << endl;
+
+    // cout << "Instruction: ADDW" << endl;
+    // decode(ADDW);
+    // cout << "------------------------------------------" << endl;
+
     // cout << "Instruction: ADDIW" << endl;
     // decode(ADDIW);
     // cout << "------------------------------------------" << endl;
+
     cout << "Instruction: SUB" << endl;
     decode(SUB);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: SUBW" << endl;
-    decode(SUBW);
-    cout << "------------------------------------------" << endl;
+
+    // cout << "Instruction: SUBW" << endl;
+    // decode(SUBW);
+    // cout << "------------------------------------------" << endl;
+
     cout << "Instruction: MUL" << endl;
     decode(MUL);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: MULW" << endl;
-    decode(MULW);
-    cout << "------------------------------------------" << endl;
+
+    // cout << "Instruction: MULW" << endl;
+    // decode(MULW);
+    // cout << "------------------------------------------" << endl;
     cout << "Instruction: MULH" << endl;
     decode(MULH);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: MULHSU" << endl;
     decode(MULHSU);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: MULHU" << endl;
     decode(MULHU);
     cout << "------------------------------------------" << endl;
@@ -159,18 +175,18 @@ int main(){
     cout << "Instruction: REMU" << endl;
     decode(REMU);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: DIVW" << endl;
-    decode(DIVW);
-    cout << "------------------------------------------" << endl;
-    cout << "Instruction: DIVUW" << endl;
-    decode(DIVUW);
-    cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMW" << endl;
-    decode(REMW);
-    cout << "------------------------------------------" << endl;
-    cout << "Instruction: REMUW" << endl;
-    decode(REMUW);
-    cout << "------------------------------------------" << endl;
+    // cout << "Instruction: DIVW" << endl;
+    // decode(DIVW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: DIVUW" << endl;
+    // decode(DIVUW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: REMW" << endl;
+    // decode(REMW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: REMUW" << endl;
+    // decode(REMUW);
+    // cout << "------------------------------------------" << endl;
     cout << "Instruction: AND" << endl;
     decode(AND);
     cout << "------------------------------------------" << endl;
@@ -220,9 +236,9 @@ int main(){
     // decode(SLLIW);
     // cout << "------------------------------------------" << endl;
     // cout << "Instruction: SRLW" << endl;
-    decode(SRLW);
-    cout << "------------------------------------------" << endl;
-    cout << "Instruction: SRLIW" << endl;
+    // decode(SRLW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: SRLIW" << endl;
     // decode(SRLIW);
     // cout << "------------------------------------------" << endl;
     // cout << "Instruction: SRAW" << endl;
