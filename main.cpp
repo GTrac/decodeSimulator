@@ -1,6 +1,5 @@
 #include <iostream>
 #include "decode.cpp"
-
 using namespace std;
 
 #define LB 0b00000000110000011000001110000011 // 12 | 3 | 000 | 7 | I type
@@ -79,6 +78,7 @@ using namespace std;
 #define JALR 0b00000000011100001000000111100111 // imm[11:0] rs1 000 rd 1100111
 
 int main(){
+    //cout << "\nInstruction: LB" << endl;
     decode(LB);
     cout << "\n------------------------------------------" << endl;
     decode(LBU);
@@ -151,5 +151,6 @@ int main(){
     cout << "\n------------------------------------------" << endl;
     decode(XORI);
     cout << "\n------------------------------------------" << endl;
-
+    decode();
+    cout << "\n------------------------------------------" << endl;
 }

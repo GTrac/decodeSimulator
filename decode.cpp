@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 #include <bitset>
 
@@ -5,7 +7,7 @@ using namespace std;
 
 void decode(uint32_t instruction){
     uint8_t opCode = (uint8_t)(instruction & 0b1111111); //retrieve opcode
-    if(opCode == 0b0110011){
+    if(opCode == 0b0110011 | opCode == 0b0111011){
         cout << "Opcode Type: R" << endl;
         uint8_t funct7 = (uint8_t)(instruction >> 25);
         uint8_t rs2 = (uint8_t)((instruction >> 20) & 0b11111);
@@ -13,7 +15,7 @@ void decode(uint32_t instruction){
         uint8_t funct3 = (uint8_t)((instruction >> 12) & 0b111);
         uint8_t rd = (uint8_t)((instruction >> 7) & 0b11111);
 
-    }else if(opCode == 0b0010011 | opCode == 0b0000011){
+    }else if(opCode == 0b0010011 | opCode == 0b0000011 | opCode == 0b0011011){
         cout << "Opcode Type: I" << endl;
         bitset<12> imm{instruction >> 20};
         uint8_t rs2 = (uint8_t)((instruction >> 20) & 0b11111);
@@ -48,5 +50,8 @@ void decode(uint32_t instruction){
     }else{
         cout << "\n/////////////////ERROR//////////////" << endl;
     }
+    cout << "Control Signals:\nreg_wen: " << << "reg_ren: " << << "alu_op: " << << "\nmem_wen: " << << "mem_ren: " << ;
+    cout << "sel1: " << << "sel2: " << << "\nsel3: " << << "sel4: " << << "sel5: " << << "sel6: " << << "sel7: " << << "sel8: " << ;
+    cout << "branch: " << << "auipc: " << << "lui: " << << endl;
 }
     
