@@ -119,9 +119,9 @@ int main(){
     cout << "Instruction: ADDW" << endl;
     decode(ADDW);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: ADDIW" << endl;
-    decode(ADDIW);
-    cout << "------------------------------------------" << endl;
+    // cout << "Instruction: ADDIW" << endl;
+    // decode(ADDIW);
+    // cout << "------------------------------------------" << endl;
     cout << "Instruction: SUB" << endl;
     decode(SUB);
     cout << "------------------------------------------" << endl;
