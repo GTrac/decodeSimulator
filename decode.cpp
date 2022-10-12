@@ -29,12 +29,19 @@ void decode(uint32_t instruction){
         uint8_t rs1 = (uint8_t)((instruction >> 15) & 0b11111);
         uint8_t funct3 = (uint8_t)((instruction >> 12) & 0b111);
 
-    }else if()
-
+    }else if(opCode == 0b1100011){
+        cout << "Opcode Type: SB" << endl;
+        bitset<12> imm{((instruction>>25 & 0b111111)<<5) + ((instruction>>8 & 0b1111)<<1) + ((instruction>>7 & 0b01)<<11) + (instruction>>30)};
+        uint8_t rs2 = (uint8_t)((instruction >> 20) & 0b11111);
+        uint8_t rs1 = (uint8_t)((instruction >> 15) & 0b11111);
+        uint8_t funct3 = (uint8_t)((instruction >> 12) & 0b111);
+        cout << "imm: " << imm << endl;
+           
+    }
+}
     
 
-    
-    
-    
-
+int main(){
+    //202222201010
+    decode(0b11010100000000000000101001100011);
 }
