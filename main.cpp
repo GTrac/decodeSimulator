@@ -214,7 +214,7 @@ int main(){
     cout << "Instruction: SLL" << endl;
     decode(SLL);
     cout << "------------------------------------------" << endl;
-    cout << "Instruction: SSLI" << endl;
+    cout << "Instruction: SLLI" << endl;
     decode(SLLI);
     cout << "------------------------------------------" << endl;
     cout << "Instruction: SRL" << endl;
@@ -242,20 +242,24 @@ int main(){
     // decode(SRLIW);
     // cout << "------------------------------------------" << endl;
     // cout << "Instruction: SRAW" << endl;
-    decode(SRAW);
-    cout << "------------------------------------------" << endl;
-    cout << "Instruction: SRAIW" << endl;
-    decode(SRAIW);
-    cout << "------------------------------------------" << endl;
+    // decode(SRAW);
+    // cout << "------------------------------------------" << endl;
+    // cout << "Instruction: SRAIW" << endl;
+    // decode(SRAIW);
+    // cout << "------------------------------------------" << endl;
+
     cout << "Instruction: SLT" << endl;
     decode(SLT);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: SLTI" << endl;
     decode(SLTI);
     cout << "------------------------------------------" << endl;
+
     cout << "Instruction: SLTU" << endl;
     decode(SLTU);
     cout << "------------------------------------------" << endl;
+    
     cout << "Instruction: SLTIU" << endl;
     decode(SLTIU);
     cout << "------------------------------------------" << endl;

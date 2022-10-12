@@ -63,7 +63,6 @@ void decode(uint32_t instruction){
         bitset<5> rs2 = (uint8_t)((instruction >> 20) & 0b11111);
         bitset<5> rs1 = (uint8_t)((instruction >> 15) & 0b11111);
         bitset<3> funct3 = (uint8_t)((instruction >> 12) & 0b111);
-        cout << "imm: " << imm << endl;
         cout << "Control Signals:\nreg_wen: " << 0 << " reg_ren: " << 1 << " alu_op: " << 0 << funct3.to_string() << "\nmem_wen: " << 0 << " mem_ren: " << 0;
         cout << " sel1: " << 0 << " sel2: " << 0 << "\nsel3: " << 0 << " sel4: " << 0 << " sel5: " << 1 << " sel6: " << 1 << " sel7: " << 0 << " sel8: " << 0;
         cout << " branch: " << 1 << " auipc: " << 0 << " lui: " << 0 << " jal: " << 0 << endl;
