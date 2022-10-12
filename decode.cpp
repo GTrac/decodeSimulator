@@ -37,7 +37,15 @@ void decode(uint32_t instruction){
         uint8_t funct3 = (uint8_t)((instruction >> 12) & 0b111);
         cout << "imm: " << imm << endl;
            
-    }
+    }else if(opCode == 0b0110111 || opCode == 0b0010111){
+        cout << "Opcode Type: U" << endl;
+        bitset<20> imm{((instruction>>12 & 0b111111)<<5) + ((instruction>>32)<<20) + ((instruction>>7 & 0b01)<<11) + (instruction>>30)};
+        uint8_t rd = (uint8_t)((instruction >> 7) & 0b11111);
+    }else if(opCode == 0b1101111){
+        cout << "Opcode Type: UJ" << endl;
+        bitset<20> imm{((instruction>>12)};
+        uint8_t rd = (uint8_t)((instruction >> 7) & 0b11111);
+    }else
 }
     
 
