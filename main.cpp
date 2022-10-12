@@ -53,17 +53,17 @@ using namespace std;
 #define LUI 0b00000000000000000001000010110111 //imm[31:12] rd 0110111
 #define AUIPC 0b00000000000000000001000010010111 //imm[31:12] rd 0010111
 #define SLL 0b00000000000100011001001110110011 // 0000000 rs2 rs1 001 rd 0110011 
-#define SLLI 0b0000000 shamt rs1 001 rd 0010011 // 0000000 shamt rs1 001 rd 0010011
+#define SLLI 0b00000000000100011001000010010011 // 0000000 shamt rs1 001 rd 0010011
 #define SRL 0b00000000000100011101001110110011 // 0000000 rs2 rs1 101 rd 0110011 
-#define SRLI 0b0000000 shamt rs1 101 rd 0010011 // 0000000 shamt rs1 101 rd 0010011
+#define SRLI 0b00000000000100011101000010010011 // 0000000 shamt rs1 101 rd 0010011
 #define SRA 0b01000000000100011101001110110011 // 0100000 rs2 rs1 101 rd 0110011 
-#define SRAI 0b0100000 shamt rs1 101 rd 0010011 // 0100000 shamt rs1 101 rd 0010011
+#define SRAI 0b01000000000100011101000010010011 // 0100000 shamt rs1 101 rd 0010011
 #define SLLW 0b00000000000100011001001110111011 // 0000000 rs2 rs1 001 rd 0111011
-#define SLLIW 0b0000000 shamt rs1 001 rd 0011011 // 0000000 shamt rs1 001 rd 0011011
+#define SLLIW 0b00000000000100011001000010011011 // 0000000 shamt rs1 001 rd 0011011
 #define SRLW 0b00000000000100011101001110111011 // 0000000 rs2 rs1 101 rd 0111011
-#define SRLIW 0b0000000 shamt rs1 101 rd 0011011 // 0000000 shamt rs1 101 rd 0011011
+#define SRLIW 0b00000000000100011101000010011011 // 0000000 shamt rs1 101 rd 0011011
 #define SRAW 0b01000000000100011101001110111011 // 0100000 rs2 rs1 101 rd 0111011
-#define SRAIW 0b0100000 shamt rs1 101 rd 0011011 // 0100000 shamt rs1 101 rd 0011011
+#define SRAIW 0b01000000000100011101000010011011 // 0100000 shamt rs1 101 rd 0011011
 #define SLT 00000000000100011010001110110011 // 0000000 rs2 rs1 010 rd 0110011 
 #define SLTI 0b00000000111100001010000110010011 //imm[11:0] rs1 010 rd 0010011
 #define SLTU 0b00000000000100011011001110110011 // 0000000 rs2 rs1 011 rd 0110011 
@@ -81,9 +81,13 @@ int main(){
     cout << "Instruction: LB" << endl;
     decode(LB);
     cout << "------------------------------------------" << endl;
+
+
     cout << "Instruction: LBU" << endl;
     decode(LBU);
     cout << "------------------------------------------" << endl;
+
+
     cout << "Instruction: SB" << endl;
     decode(SB);
     cout << "------------------------------------------" << endl;
@@ -155,26 +159,37 @@ int main(){
     cout << "Instruction: REMU" << endl;
     decode(REMU);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(DIVW);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(DIVUW);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(REMW);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(REMUW);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(AND);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(ANDI);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(OR);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(ORI);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(XOR);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     decode(XORI);
     cout << "------------------------------------------" << endl;
+    cout << "Instruction: REMU" << endl;
     //decode();
     cout << "------------------------------------------" << endl;
 }
